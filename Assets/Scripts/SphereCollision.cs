@@ -5,16 +5,15 @@ public class SphereCollision : Shape
     public float Length;
     public float Width;
 
-    public BoxCollision(float length, float width)
+    public void InitSphere(float length, float width, Vector2 origin)
     {
         Length = length;
         Width = width;
+        origin = this.originPoint;
     }
 
-    protected override void DrawCollider()
+    public override void DrawCollider()
     {
         base.DrawCollider();
     }
-
-    public float
 }

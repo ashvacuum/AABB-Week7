@@ -8,7 +8,7 @@ public class Shape : MonoBehaviour
 
     public event Action OnCollision = null;
 
-    protected virtual void DrawCollider()
+    public virtual void DrawCollider()
     {
 
     }
